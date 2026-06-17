@@ -1,0 +1,283 @@
+:root{
+    --bacground: #fff;
+    --cabecalho: #f5c3d3;
+    --texto: #000;
+    --body: #fafafa;
+    --rodape:  #1f2937;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: var(--body);
+}
+
+/* HEADER */
+
+header{
+    width: 100%;
+    height: 100px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background: var(--cabecalho) hidden;
+    background: #fafafa;
+    border-bottom: 4px solid #fafafa;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);;
+}
+.logo h2, h3{
+    color: var(--texto);
+    margin-bottom: 5px;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#000;
+    font-weight: bold;
+}
+nav a:hover{
+    border-bottom: 1px solid #000;
+}
+
+header button{
+    padding:10px 20px;
+}
+header button:hover{
+    background: var(--cabecalho);
+    border: 2px solid var(--cabecalho);
+}
+
+/* BANNER */
+
+.banner{
+    display:flex;
+    min-height:500px;
+    background: #fff;
+}
+
+.banner-text{
+    flex:1;
+    padding:80px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.banner-text h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.banner-text p{
+    margin-bottom:20px;
+    line-height:1.6;
+}
+
+.banner-text button{
+    width:220px;
+    padding:15px;
+}
+.banner-text button:hover{
+    background: var(--cabecalho);
+    border: 2px solid var(--cabecalho);
+}
+
+.banner-img{
+    margin-right: 10px;
+    margin-top: 50px;
+    flex:1;
+    border: 1px solid #000 hidden;
+    background:#e5e5e5;
+    height: 400px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+img{
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* SEÇÕES */
+
+.secao{
+    background: var(--bacground) hidden;
+    padding:80px;
+    text-align:center;
+}
+
+.secao2{
+    background: var(--bacground) hidden;
+    padding:80px;
+    text-align:center;
+    height: 600px;
+}
+
+.secao h2{
+    margin-bottom:15px;
+}
+
+.secao p{
+    margin-bottom:40px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:280px;
+    border:1px solid #ddd;
+    padding:30px 20px;
+    border-radius:8px;
+}
+.card:hover{
+    padding: 1px hidden;
+    box-shadow: 0px 0px 10px #ccc;
+    transition: 0.3s;
+}
+.conteudo-card{
+    border: 1px solid #000 hidden;
+}
+.icon-card{
+    margin-bottom: 10px;
+}
+.icon-card i{
+    width: 30%;
+    border-radius: 100%;
+    background: #eeecec;
+    padding: 20px;
+}
+.icon-card1{
+    margin-bottom: 10px;
+}
+.titulo-card{
+    margin-bottom: 10px;
+    border: 1px solid #000 hidden;
+}
+.paragrafo-card{
+    border: #000 1px solid hidden;
+}
+.paragrafo-card p{
+    line-height: 1.4;
+}
+.titulo-conteudo{
+    border: 1px solid #000 hidden;
+    margin-bottom: 10px;
+}
+.paragrafo-conteudo p{
+    border: 1px solid #000 hidden;
+    line-height: 1.4;
+}
+.clicar{
+    border: 1px solid #000 hidden;
+    float: left hidden;
+    text-align: left;
+}
+.clicar a{
+    text-decoration: none;
+    color: #000;
+}
+.clicar i{
+    margin-left: 150px;
+}
+.cards3{
+    /* width: 300px; */
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+.card1,.card2, .card3{
+    width: 350px;
+    height: 300px;
+    text-align: left;
+    border: 1px  solid #ccc;
+    border-radius: 8px;
+}
+.card1:hover,.card2:hover, .card3:hover{
+    box-shadow: 0px 0px 10px #ccc;
+    transition: 0.3s;
+}
+.conteudo-destaque{
+    border: 1px solid #000 hidden;
+    margin-left: 10px hidden;
+    padding: 10px;
+}
+.area-aluno{
+    background:#f5f5f5;
+}
+
+/* DESTAQUES */
+
+.img{
+    width:100%;
+    height:200px;
+    background:#ddd;
+    margin-bottom:15px;
+}
+
+/* FOOTER */
+
+footer{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:30px;
+    padding:60px 80px;
+    background: var(--rodape);
+    border-top:1px solid #ddd;
+    color: #fff;
+}
+
+footer ul{
+    list-style:none;
+}
+
+footer li{
+    margin-top:10px;
+}
+.informacoes-footer{
+    border: 1px solid #000 hidden;
+}
+
+.icons-footer{
+    display: flex;
+}
+.titulo-footer h3,p{
+    margin-bottom: 10px;
+    color: #000;
+}
+.icons-footer div{
+    margin-right: 10px;
+    color: #fff hidden;
+}
+.info-rodape ul{
+    color: #fff hidden;
+    margin-right: -10px;
+}
+.paragrafo-footer{
+    border: 1px solid #000 hidden;
+    width: 40%;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
