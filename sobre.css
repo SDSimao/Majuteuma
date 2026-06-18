@@ -9,18 +9,13 @@
 
 }
 
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
     font-family: "Oswald", sans-serif;
 }
-
-body{
-    background: var(--body);
-}
-
-/* HEADER */
 
 header{
     width: 100%;
@@ -37,6 +32,7 @@ header{
     z-index: 1000;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);;
 }
+
 .logo h2, h3{
     color: var(--texto);
     margin-bottom: -2px;
@@ -68,19 +64,19 @@ header button{
     padding:10px 20px;
 }
 header button:hover{
-    background: var(--cabecalho);
+    background: var(--colegio);
     border: 2px solid var(--cabecalho);
 }
 
-/* BANNER */
 
-.banner{
+/* HERO */
+
+.hero{
     display:flex;
     min-height:500px;
-    background: #fff;
 }
 
-.banner-text{
+.hero-text{
     flex:1;
     padding:80px;
     display:flex;
@@ -88,98 +84,74 @@ header button:hover{
     justify-content:center;
 }
 
-.banner-text h1{
+.hero-text h1{
     font-size:50px;
     margin-bottom:20px;
 }
 
-.banner-text p{
+.hero-text p{
+    line-height:1.7;
     margin-bottom:20px;
-    line-height:1.6;
 }
 
-.banner-text button{
+.hero-text button{
     width:220px;
     padding:15px;
+    font-weight: bold;
 }
-.banner-text button:hover{
+.hero-text button:hover{
     background: var(--cabecalho);
     border: 2px solid var(--cabecalho);
 }
-
-.banner-img{
-    margin-right: 10px;
+.hero-img{
     margin-top: 50px;
+    margin-right: 10px;
     flex:1;
-    border: 1px solid #000 hidden;
-    background:#e5e5e5;
-    height: 400px;
+    background:#e4e4e4;
     display:flex;
     justify-content:center;
     align-items:center;
 }
-.banner-img #fundo1{
-    display: none;
-}
+
 img{
     width: 600px;
-    height: 400px;
+    height: 450px;
     object-fit: cover;
 }
-.banner-img img:hover{
-    display: none;
-    transition: 0.3s;
-}
-.banner-img img:hover + #fundo1{
-    display: block;
-}
 
-/* SEÇÕES */
 
-.secao{
-    background: var(--bacground) hidden;
+/* HISTÓRIA */
+
+.historia{
     padding:80px;
     text-align:center;
 }
 
-.secao2{
-    background: var(--bacground) hidden;
-    padding:80px;
-    text-align:center;
-    height: 600px;
+.historia h2{
+    margin-bottom:20px;
 }
 
-.secao h2{
-    margin-bottom:15px;
+.historia p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.7;
 }
 
-.secao p{
-    margin-bottom:40px;
-}
+/* MISSÃO */
 
-.cards{
+.valores{
     display:flex;
     justify-content:center;
     gap:20px;
     flex-wrap:wrap;
+    padding:80px;
 }
 
 .card{
-    width:280px;
+    width:250px;
     border:1px solid #ddd;
-    padding:30px 20px;
-    border-radius:8px;
-}
-.card:hover{
-    padding: 1px hidden;
-    box-shadow: 0px 0px 10px #ccc;
-    transition: 0.3s;
-}
-.conteudo-card{
-    border: 1px solid #000 hidden;
-}
-.icon-card{
-    margin-bottom: 10px;
+    padding:30px;
+    text-align:center;
 }
 .icon-card i{
     width: 30%;
@@ -187,9 +159,7 @@ img{
     background: #eeecec;
     padding: 20px;
 }
-.icon-card1{
-    margin-bottom: 10px;
-}
+
 .titulo-card{
     margin-bottom: 10px;
     border: 1px solid #000 hidden;
@@ -204,56 +174,65 @@ img{
     border: 1px solid #000 hidden;
     margin-bottom: 10px;
 }
-.paragrafo-conteudo p{
-    border: 1px solid #000 hidden;
-    line-height: 1.4;
+
+/* INFRAESTRUTURA */
+
+.infraestrutura{
+    display:flex;
+    padding:80px;
+    gap:40px;
 }
-.clicar{
-    border: 1px solid #000 hidden;
-    float: left hidden;
-    text-align: left;
-}
-.clicar a{
-    text-decoration: none;
-    color: #000;
-}
-.clicar i{
-    margin-left: 150px;
-}
-.cards3{
-    /* width: 300px; */
+
+.infra-img{
+    flex:1;
+    background:#ddd;
+    min-height:350px;
     display:flex;
     justify-content:center;
-    gap:40px;
+    align-items:center;
+}
+.infra-img img{
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.infra-text{
+    flex:1;
+}
+
+.infra-text h2{
+    margin-bottom:20px;
+}
+
+.infra-text p{
+    margin-bottom:20px;
+}
+
+.infra-text ul{
+    padding-left:20px;
+}
+
+.infra-text li{
+    margin-bottom:10px;
+}
+
+/* DIFERENCIAIS */
+
+.diferenciais{
+    padding:80px;
+    text-align:center;
+}
+
+.diferenciais h2{
+    margin-bottom:40px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
     flex-wrap:wrap;
-}
-.card1,.card2, .card3{
-    width: 350px;
-    height: 300px;
-    text-align: left;
-    border: 1px  solid #ccc;
-    border-radius: 8px;
-}
-.card1:hover,.card2:hover, .card3:hover{
-    box-shadow: 0px 0px 10px #ccc;
-    transition: 0.3s;
-}
-.conteudo-destaque{
-    border: 1px solid #000 hidden;
-    margin-left: 10px hidden;
-    padding: 10px;
-}
-.area-aluno{
-    background:#f5f5f5;
-}
-
-/* DESTAQUES */
-
-.img{
-    width:100%;
-    height:200px;
-    background:#ddd;
-    margin-bottom:15px;
 }
 
 /* FOOTER */
@@ -289,7 +268,6 @@ footer li{
 }
 .titulo-footer h3{
     font-size: 20pt;
-
 }
 .icons-footer div{
     margin-right: 10px;
@@ -305,51 +283,41 @@ footer li{
     line-height: 1.4;
     margin-bottom: 10px;
 }
+
 @media (min-width: 980px){
 
     header{
         padding: 20px 80px;
-       
-    }
-    header button:hover{
-        background-color: var(--colegio);
     }
 
-    .banner{
+    .hero{
         max-width: 1400px hidden;
         margin: auto hidden;
         align-items: center hidden;
-        background: #f00 hidden;
-        height: 600px;
     }
 
-    .banner button:hover{
-        background: var(--colegio);
-    }
-
-    .banner-text{
+    .hero-text{
         padding: 80px;
     }
-    .banner-text h1{
-        border: 1px solid #000 hiddden;
-        width: 70%;
 
-    }
-
-    .banner-img{
-        margin-right: 20px;
+    .hero-img{
+        margin-right: 10px;
         background: none;
     }
-    
-    .banner-img img{
+
+    .hero-img img{
         width: 750px;
-        margin-top: 50px;
+        margin-top: 40px hidden;
         max-width: 100%;
         height: auto;
     }
-    .secao{
-        background: #f00 hidden;
-        width: 9080px;
+
+    .infraestrutura{
+        background: #f00 hidden;        
+    }
+    .infra-img img{
+        width: 850px;
+        object-fit: cover;
     }
 
     .secao,
@@ -357,10 +325,6 @@ footer li{
         max-width: 1400px;
         margin: auto;
         padding: 80px;
-    }
-    .secao2{
-        height: auto;
-
     }
 
     .cards{
@@ -374,43 +338,16 @@ footer li{
     }
 
     .card{
-        width: 260px;
-        margin-right: 20px;
+        width: 300px;
     }
 
     .card1,
     .card2,
     .card3{
         width: 350px;
-        margin-right: 30px;
     }
 
     footer{
         padding: 60px 80px;
     }
 }
- 
-/* 
-@media (min-width: 1920px){
-
-    body{
-        font-size: 20px;
-    }
-
-    .banner,
-    .secao,
-    .secao2,
-    footer{
-        max-width: 1800px;
-        margin: auto;
-    }
-
-    .cards,
-    .cards3{
-        gap: 40px;
-    }
-
-    .banner-text h1{
-        font-size: 70px;
-    }
-} */

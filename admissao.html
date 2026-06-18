@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissão</title>
+    <link rel="stylesheet" href="admissao.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="logo">
+            <h2>COMPLEXO</h2>
+            <h3>Escolar Privado Majuteuma</h3>
+        </div>
+
+        <div class="menu-toggle">
+             <i class="fas fa-bars"></i>
+         </div>
+
+        <nav>
+            <a href="principal.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="ensino.html">Ensino</a>
+            <a href="#">Notícias</a>
+            <a href="#">Contacto</a>
+        </nav>
+
+        <button>Área do Aluno</button>
+    </header>
+
+    <!-- BANNER -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>Faça Parte da Nossa História</h1>
+
+            <p>
+                Venha estudar numa instituição comprometida
+                com a excelência académica e o desenvolvimento
+                integral dos alunos.
+            </p>
+
+            <button>Iniciar Matrícula</button>
+
+        </div>
+
+        <div class="hero-img">
+            <img src="img/bacground (2).jpg" alt="">
+        </div>
+
+    </section>
+
+    <!-- PROCESSO -->
+
+    <section class="processo">
+
+        <h2>Como Funciona o Processo</h2>
+
+        <div class="etapas">
+
+            <div class="etapa">
+                <span>1</span>
+                <h3>Inscrição</h3>
+                <p>Preenchimento do formulário.</p>
+            </div>
+
+            <div class="etapa">
+                <span>2</span>
+                <h3>Análise</h3>
+                <p>Análise dos documentos.</p>
+            </div>
+
+            <div class="etapa">
+                <span>3</span>
+                <h3>Entrevista</h3>
+                <p>Conversa com a família.</p>
+            </div>
+
+            <div class="etapa">
+                <span>4</span>
+                <h3>Matrícula</h3>
+                <p>Confirmação da vaga.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- DOCUMENTOS -->
+
+    <section class="documentos">
+
+        <div class="documentos-info">
+
+            <h2>Documentos Necessários</h2>
+
+            <ul>
+                <li>Certidão de nascimento</li>
+                <li>Bilhete de Identidade</li>
+                <li>Fotografia tipo passe</li>
+                <li>Declaração escolar</li>
+                <li>Boletim de notas</li>
+            </ul>
+
+        </div>
+
+        <div class="duvidas">
+
+            <h3>Tem Dúvidas?</h3>
+
+            <p>
+                Nossa equipa está pronta para ajudar
+                durante todo o processo de admissão.
+            </p>
+
+            <button>Falar Agora</button>
+
+        </div>
+
+    </section>
+
+    <!-- FORMULÁRIO -->
+
+    <section class="formulario">
+
+        <h2>Solicitar Informações</h2>
+
+        <form>
+
+            <input type="text" placeholder="Nome Completo">
+
+            <input type="email" placeholder="E-mail">
+
+            <input type="tel" placeholder="Telefone">
+
+            <select>
+                <option>Nível de Ensino</option>
+                <option>Educação Infantil</option>
+                <option>Fundamental I</option>
+                <option>Fundamental II</option>
+                <option>Ensino Médio</option>
+            </select>
+
+            <textarea placeholder="Mensagem"></textarea>
+
+            <button type="submit" onclick="enviarWhatsapp()">
+                Enviar Solicitação
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="informacoes-footer">
+            <div class="titulo-footer">
+                <h3 style="color: #000;">Colégio</h3>
+            <div class="paragrafo-footer">
+                <p style="color: #000;">Educamos com propósito para formar cidadão consciente.</p>
+            </div>
+            </div>
+            <div class="icons-footer">
+                    <div><i class="fab fa-facebook-f"></i></div>
+                    <div><i class="fab fa-twitter"></i></div>
+                    <div><i class="fab fa-instagram"></i></div>
+                    <div><i class="fab fa-linkedin-in"></i></div>
+                    <div><i class="fab fa-github"></i></div>
+            </div>
+        </div>
+
+        <div class="info-rodape">
+            <h3 style="color: #000;">Links</h3>
+            <ul>
+                <li>Início</li>
+                <li>Sobre</li>
+                <li>Ensino</li>
+            </ul>
+        </div>
+
+        <div class="info-rodape">
+            <h3 style="color: #000;">Ensino</h3>
+            <ul>
+                <li>Infantil</li>
+                <li>Fundamental</li>
+                <li>Médio</li>
+            </ul>
+        </div>
+
+        <div>
+            <i class="fas fa-envelope"></i> <small>ola@majuteuma.com</small> <br> <br>
+            <i class="fas fa-phone"></i> <small> +244 2222222222</small>
+        </div>
+
+    </footer>
+
+    <script>
+
+function enviarWhatsapp(){
+
+
+    let url =
+`https://wa.me/943175985?text=${encodeURIComponent(texto)}`;
+
+    window.open(url, "_blank");
+}
+
+</script>
+
+</body>
+</html>
